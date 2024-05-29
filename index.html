@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Rabih Abou Leila</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background-image: url('profile-picture.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: top;
+        }
+        header {
+            background-color: rgba(0, 31, 63, 0.8);
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: rgba(0, 31, 63, 0.8);
+        }
+        nav a {
+            color: white;
+            padding: 1rem;
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+        nav a:hover {
+            background-color: rgba(0, 64, 128, 0.8);
+        }
+        .container {
+            padding: 2rem;
+            background-color: rgba(255, 255, 255, 0.9);
+            margin: 2rem auto;
+            border-radius: 8px;
+            width: 90%;
+            max-width: 800px;
+            display: none;
+        }
+        .section {
+            margin: 1rem 0;
+            padding: 1rem;
+            border-radius: 8px;
+        }
+        h2 {
+            border-bottom: 2px solid #001f3f;
+            padding-bottom: 0.5rem;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        ul li {
+            margin-bottom: 0.5rem;
+        }
+        .contact form {
+            display: flex;
+            flex-direction: column;
+        }
+        .contact form input, .contact form textarea {
+            margin-bottom: 1rem;
+            padding: 0.5rem;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .contact form button {
+            padding: 0.5rem;
+            border: none;
+            border-radius: 4px;
+            background-color: #001f3f;
+            color: white;
+            font-size: 1rem;
+            cursor: pointer;
+        }
+        .contact form button:hover {
+            background-color: #004080;
+        }
+        .dynamic-content {
+            display: none;
+        }
+        .dynamic-content.active {
+            display: block;
+        }
+        .skills-columns {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .skills-columns li {
+            flex: 1 1 45%;
+            margin-bottom: 0.5rem;
+        }
+        a.publication-link {
+            color: #001f3f;
+            text-decoration: none;
+        }
+        a.publication-link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Dr. Rabih Abou Leila</h1>
+        <p>Family Medicine Consultant and Healthcare Manager</p>
+    </header>
+    <nav>
+        <a href="#about" onclick="showSection('about')">About Me</a>
+        <a href="#education" onclick="showSection('education')">Education</a>
+        <a href="#professional" onclick="showSection('professional')">Professional Experience</a>
+        <a href="#achievements" onclick="showSection('achievements')">Achievements</a>
+        <a href="#skills" onclick="showSection('skills')">Skills</a>
+        <a href="#awards" onclick="showSection('awards')">Awards</a>
+        <a href="#publications" onclick="showSection('publications')">Publications</a>
+        <a href="#presentations" onclick="showSection('presentations')">Presentations</a>
+        <a href="#contact" onclick="showSection('contact')">Contact</a>
+    </nav>
+    <div class="container" id="content-container">
+        <section id="about" class="section dynamic-content">
+            <h2>About Me</h2>
+            <p>Dynamic and accomplished Family Medicine Consultant and Healthcare Manager with extensive experience in leading healthcare operations and clinical services. Proven track record in developing strategic plans, overseeing operation deployment, providing leadership to large teams, and driving business development initiatives. Adept at implementing innovative healthcare solutions to improve patient care, operational efficiency, and financial performance. Seeking a challenging position to leverage my expertise in healthcare management and clinical excellence.</p>
+        </section>
+        <section id="education" class="section dynamic-content">
+            <h2>Education and Training</h2>
+            <ul>
+                <li><strong>Master of Science, Healthcare Management</strong>, 09/2020<br>Royal College of Surgeons in Ireland - Ireland</li>
+                <li><strong>Arab Board Family Medicine</strong>, 05/2015<br>Arab Board of Health Specializations</li>
+                <li><strong>Family Medicine Specialist</strong>, 07/2013<br>American University of Beirut - Beirut</li>
+                <li><strong>Bachelor of Science, Medicine, and Surgery</strong>, 07/2008<br>Beirut Arab University - Beirut</li>
+            </ul>
+        </section>
+        <section id="professional" class="section dynamic-content">
+            <h2>Professional Experience</h2>
+            <ul>
+                <li><strong>Family Medicine Consultant</strong> - The First Clinic by International Medical Center, Jeddah (Sep 2023 – Present)</li>
+                <li><strong>Center Director</strong> - The First Clinic by International Medical Center, Jeddah (Sep 2023 – Present)</li>
+                <li><strong>Family Medicine Consultant</strong> - American Mission Hospital, Manama, Bahrain (Dec 2013 – Sep 2023)</li>
+                <li><strong>Head of Primary Care</strong> - American Mission Hospital, Manama, Bahrain (Dec 2022 – Sep 2023)</li>
+                <li><strong>Medical Director Ambulatory Care Centers</strong> - American Mission Hospital, Manama, Bahrain (Jan 2015 – Sep 2023)</li>
+            </ul>
+        </section>
+        <section id="achievements" class="section dynamic-content">
+            <h2>Achievements</h2>
+            <ul>
+                <li>Led the successful accreditation of the medical center by international bodies.</li>
+                <li>Implemented innovative healthcare solutions to improve patient care and operational efficiency.</li>
+                <li>Developed and executed strategic plans to enhance healthcare services.</li>
+                <li>Managed a team of 240 healthcare professionals, fostering a collaborative and productive work environment.</li>
+                <li>Improved patient satisfaction scores through quality improvement initiatives.</li>
+                <li>Expanded healthcare services to new areas, increasing patient reach and service accessibility.</li>
+                <li>Organized and conducted training programs for medical staff to enhance their skills and knowledge.</li>
+                <li>Successfully managed the operational and administrative functions of the medical center.</li>
+                <li>Conducted research and published articles in reputable medical journals.</li>
+                <li>Received multiple awards for excellence in healthcare management and leadership.</li>
+                <li>Launched telemedicine services, resulting in over 100 additional consultations per week and improved patient medication access.</li>
+                <li>Spearheaded business development initiatives, improving appointment conversion rates by 28% and consultations by 50 per week.</li>
+                <li>Forged partnerships with embassies and banks and prepared proposals for in-house clinics.</li>
+                <li>Enhanced customer satisfaction, raising Google survey ratings from 2.7 to 4.1.</li>
+            </ul>
+        </section>
+        <section id="skills" class="section dynamic-content">
+            <h2>Skills</h2>
+            <ul class="skills-columns">
+                <li>Clinical Skills</li>
+                <li>Diagnosis and Treatment Plan</li>
+                <li>Office-Based Procedures</li>
+                <li>Mastering Coordinated Care</li>
+                <li>Leadership Skills</li>
+                <li>Building Teams</li>
+                <li>Establishing Reliable Processes</li>
+                <li>Setting Business Strategies</li>
+                <li>Administrative Skills</li>
+                <li>Data Management</li>
+                <li>Quality Improvement Projects</li>
+                <li>Professional Business Reporting</li>
+                <li>Implementation Skills</li>
+                <li>Communication Skills</li>
+                <li>Presentation Skills</li>
+            </ul>
+        </section>
+        <section id="awards" class="section dynamic-content">
+            <h2>Awards</h2>
+            <ul>
+                <li><strong>Resident of the Year</strong> - 2013</li>
+                <li><strong>Innovation Award</strong> - 2015</li>
+                <li><strong>Best Team Leader</strong> - 2016</li>
+                <li><strong>Best Team Leader</strong> - 2018</li>
+                <li><strong>First Class Honor MSc HCM</strong> - 2020</li>
+            </ul>
+        </section>
+        <section id="publications" class="section dynamic-content">
+            <h2>Publications</h2>
+            <ul>
+                <li><a href="https://bmjopenquality.bmj.com/content/10/2/e001351" target="_blank" class="publication-link">Improving physician compliance with mammography screening by implementing a breast cancer screening guideline at a hospital in Bahrain. BMJ Open Quality 2021;10:e001351. doi: 10.1136/bmjoq-2021-001351</a></li>
+                <li><a href="https://www.cureus.com/articles/33209-pre-ramadan-consultation-does-a-physicians-religious-belief-and-specialty-matter" target="_blank" class="publication-link">Reducing COVID 19 vaccine hesitancy by implementing organizational interventions at primary care setting; Cureus.</a></li>
+                <li><a href="https://www.cureus.com/articles/33209-pre-ramadan-consultation-does-a-physicians-religious-belief-and-specialty-matter" target="_blank" class="publication-link">Pre-Ramadan Consultation: Does a Physician's Religious Belief and Specialty Matter?. Cureus 2023; 15(1):e33209. doi:10.7759/cureus.3320</a></li>
+            </ul>
+        </section>
+        <section id="presentations" class="section dynamic-content">
+            <h2>Featured Presentations</h2>
+            <ul>
+                <li>Introduction to Risk Management</li>
+                <li>Introduction of Healthcare Quality</li>
+                <li>Alphabet of Healthcare System</li>
+                <li>Implementation of Science in Healthcare</li>
+                <li>GAP Analysis for Accreditation</li>
+                <li>Selection of KPI</li>
+                <li>Management Lessons from Mayo Clinic</li>
+                <li>Female Reproductive Diseases in Primary Care</li>
+                <li>Male Diseases in Primary Care</li>
+                <li>Allergy Presentation</li>
+                <li>Selection of Antibiotic in Primary Care</li>
+            </ul>
+        </section>
+        <section id="contact" class="section dynamic-content">
+            <h2>Contact</h2>
+            <form>
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+            <p>Phone: 00966536420946</p>
+            <p>Email: <a href="mailto:dr.rabee@live.com">dr.rabee@live.com</a></p>
+            <p>Location: Jeddah, Saudi Arabia</p>
+        </section>
+    </div>
+    <script>
+        function showSection(sectionId) {
+            document.getElementById('content-container').style.display = 'block';
+            var sections = document.querySelectorAll('.dynamic-content');
+            sections.forEach(function(section) {
+                section.classList.remove('active');
+            });
+            document.getElementById(sectionId).classList.add('active');
+        }
+    </script>
+</body>
+</html>
